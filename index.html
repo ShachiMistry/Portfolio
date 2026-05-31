@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shachi Mistry | Systems ML & Distributed Infrastructure Engineer</title>
+    <meta name="description"
+        content="Portfolio of Shachi Mistry, Software Engineer specializing in Systems ML, distributed training pipelines, and high-performance inference.">
+    <link rel="stylesheet" href="styles.css?v=1.6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Ambient Glow Spheres -->
+    <div class="ambient-glows">
+        <div class="glow-sphere glow-1"></div>
+        <div class="glow-sphere glow-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo" id="nav-logo">Shachi_Mistry</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text fade-in-up">
+                <h1>Hi, I'm <span class="highlight">Shachi Mistry</span></h1>
+                <h2>Systems ML & Distributed Systems</h2>
+                <p class="hero-subtitle">Engineering high-throughput, low-latency machine learning systems, distributed
+                    training frameworks, and reliable cloud-native infrastructure.</p>
+                <div class="social-links">
+                    <a href="https://github.com/shachimistry" target="_blank" class="social-btn" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/shachi-mistry" target="_blank" class="social-btn"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://medium.com/@shachihiteshkumar.mistry" target="_blank" class="social-btn"
+                        aria-label="Medium"><i class="fab fa-medium-m"></i></a>
+                    <a href="mailto:shachihiteshkumar.mistry@sjsu.edu" class="social-btn" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-terminal fade-in-up" style="animation-delay: 0.2s;">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-dot dot-red"></span>
+                        <span class="btn-dot dot-yellow"></span>
+                        <span class="btn-dot dot-green"></span>
+                    </div>
+                    <div class="terminal-title">bash - shachi@sjsu-core</div>
+                </div>
+                <div class="terminal-body" id="terminal-content">
+                    <div class="terminal-line"><span class="prompt">shachi@sjsu-core:~$</span> <span class="command">cat
+                            profile.json</span></div>
+                    <div class="terminal-line output">
+                        {<br>
+                        &nbsp;&nbsp;"focus": "Systems ML &amp; Cloud Infra",<br>
+                        &nbsp;&nbsp;"education": "M.S. Software Engineering @ SJSU",<br>
+                        &nbsp;&nbsp;"core_stack": ["Python", "C++", "Go", "PyTorch", "Kubernetes"],<br>
+                        &nbsp;&nbsp;"status": "Building robust ModelOps platforms"<br>
+                        }
+                    </div>
+                    <div class="terminal-line"><span class="prompt">shachi@sjsu-core:~$</span> <span
+                            id="typewriter-cmd"></span><span class="cursor"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="section-container">
+            <div class="section-title-wrap fade-in-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Systems background optimized for large-scale AI deployment.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-bio glass-card fade-in-up">
+                    <p>I am a Software Engineer pursuing my Master's in Software Engineering at San Jose State
+                        University. My technical core is focused at the intersection of <strong>Systems
+                            Programming</strong>, <strong>Distributed Platforms</strong>, and <strong>Machine Learning
+                            Operations (MLOps)</strong>.</p>
+                    <p>I specialize in maximizing compute efficiency, managing GPU resources for heterogeneous
+                        environments, and building robust cloud-native systems processing multi-terabyte data workflows.
+                    </p>
+                    <p>My goal is to advance the state-of-the-art in Big Model-as-a-Service (BMaaS) platforms, reducing
+                        the time-to-market for NLP, GenAI, and large-scale deep learning models worldwide.</p>
+                </div>
+
+                <div class="skills-wrapper glass-card fade-in-up" style="animation-delay: 0.15s;">
+                    <h3>Technical Engine</h3>
+
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Bash</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>AI & Deep Learning</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">NVIDIA Triton</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LangGraph</span>
+                            <span class="skill-tag">Vector Search</span>
+                            <span class="skill-tag">HuggingFace</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Cloud & Distributed Systems</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS (SQS/DynamoDB)</span>
+                            <span class="skill-tag">Apache Spark</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="section-container">
+            <div class="section-title-wrap fade-in-up">
+                <h2 class="section-title">Projects Directory</h2>
+                <p class="section-subtitle">Explore my open-source software projects and active telemetry simulations.
+                </p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container fade-in-up">
+                <button class="filter-btn active" data-filter="all">All Systems</button>
+                <button class="filter-btn" data-filter="ml-ai">ML / GenAI</button>
+                <button class="filter-btn" data-filter="dist-etl">Distributed &amp; ETL</button>
+                <button class="filter-btn" data-filter="backend">Backend &amp; Cloud</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- Project 1: Triton Inference Monitor -->
+                <div class="project-card glass-card fade-in-up" data-category="ml-ai">
+                    <div class="project-header">
+                        <span class="project-type-tag">ML Platform</span>
+                        <a href="https://github.com/ShachiMistry/triton-inference-monitor" target="_blank"
+                            class="project-gh-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>triton-inference-monitor</h3>
+                    <p class="project-desc">High-performance GPU inference benchmarking tool for NVIDIA Triton Server
+                        with automated latency profiling and hardware telemetry.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Triton</span>
+                        <span class="tech-tag">NVML</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+
+                    <!-- Interactive Triton Telemetry Simulator -->
+                    <div class="project-simulator">
+                        <button class="sim-btn" id="btn-triton-sim"><i class="fas fa-play"></i> Run Inference
+                            Benchmark</button>
+                        <div class="triton-sim-panel" id="triton-panel" style="display: none;">
+                            <div class="sim-status">
+                                <span>STATUS: <span class="status-indicator"><span class="pulse-dot"></span> BENCHMARK
+                                        ACTIVE</span></span>
+                                <span id="triton-throughput">0 req/s</span>
+                            </div>
+                            <div class="sim-chart" id="triton-chart">
+                                <!-- Chart bars will be dynamically inserted here -->
+                            </div>
+                            <div class="sim-metrics">
+                                <div class="metric-item">
+                                    <div class="metric-label">P50 Latency</div>
+                                    <div class="metric-val" id="triton-p50">0.0 ms</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">P99 Latency</div>
+                                    <div class="metric-val" id="triton-p99">0.0 ms</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">GPU Load</div>
+                                    <div class="metric-val" id="triton-load">0%</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VRAM Usage</div>
+                                    <div class="metric-val" id="triton-vram">0 GB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: LayoverOS -->
+                <div class="project-card glass-card fade-in-up" data-category="ml-ai" style="animation-delay: 0.1s;">
+                    <div class="project-header">
+                        <span class="project-type-tag">Generative AI</span>
+                        <a href="https://github.com/ShachiMistry/LayoverOS" target="_blank" class="project-gh-link"
+                            aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>LayoverOS</h3>
+                    <p class="project-desc">Autonomous, state-persistent recovery agent for stranded travelers.
+                        Implements Vector search and stateful orchestration graph workflows.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">MongoDB Vector</span>
+                        <span class="tech-tag">LLMs</span>
+                    </div>
+
+                    <!-- Interactive RAG Simulator -->
+                    <div class="project-simulator">
+                        <button class="sim-btn" id="btn-rag-sim"><i class="fas fa-search-location"></i> Trace RAG
+                            Pipeline</button>
+                        <div class="rag-sim-steps" id="rag-panel" style="display: none;">
+                            <div class="rag-step" id="rag-step-1">
+                                <div class="step-num">1</div>
+                                <div class="step-text">User query embedding generation...</div>
+                            </div>
+                            <div class="rag-step" id="rag-step-2">
+                                <div class="step-num">2</div>
+                                <div class="step-text">Querying MongoDB Vector Database...</div>
+                            </div>
+                            <div class="rag-step" id="rag-step-3">
+                                <div class="step-num">3</div>
+                                <div class="step-text">LangGraph evaluation &amp; routing...</div>
+                            </div>
+                            <div class="rag-step" id="rag-step-4">
+                                <div class="step-num">4</div>
+                                <div class="step-text">Prompt formatting &amp; LLM reply.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: data-platform -->
+                <div class="project-card glass-card fade-in-up" data-category="dist-etl"
+                    style="animation-delay: 0.15s;">
+                    <div class="project-header">
+                        <span class="project-type-tag">Distributed Data</span>
+                        <a href="https://github.com/ShachiMistry/data-platform" target="_blank" class="project-gh-link"
+                            aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>data-platform</h3>
+                    <p class="project-desc">Distributed data platform processing 5TB+ daily with 100+ concurrent jobs.
+                        Employs PySpark, Airflow scheduler, and Kubernetes pods.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+
+                    <!-- Interactive Spark Telemetry Simulator -->
+                    <div class="project-simulator">
+                        <button class="sim-btn" id="btn-spark-sim"><i class="fas fa-network-wired"></i> Monitor Spark
+                            Cluster</button>
+                        <div class="spark-sim-nodes" id="spark-panel" style="display: none;">
+                            <div class="node-row">
+                                <div class="node-info">
+                                    <span>Spark Master Node</span>
+                                    <span id="node-master-state">IDLE</span>
+                                </div>
+                                <div class="node-progress-bg">
+                                    <div class="node-progress-fill" id="node-master-bar"></div>
+                                </div>
+                            </div>
+                            <div class="node-row">
+                                <div class="node-info">
+                                    <span>Worker Node 01</span>
+                                    <span id="node-worker1-state">IDLE</span>
+                                </div>
+                                <div class="node-progress-bg">
+                                    <div class="node-progress-fill" id="node-worker1-bar"></div>
+                                </div>
+                            </div>
+                            <div class="node-row">
+                                <div class="node-info">
+                                    <span>Worker Node 02</span>
+                                    <span id="node-worker2-state">IDLE</span>
+                                </div>
+                                <div class="node-progress-bg">
+                                    <div class="node-progress-fill" id="node-worker2-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: scalable-order-processing-system -->
+                <div class="project-card glass-card fade-in-up" data-category="backend">
+                    <div class="project-header">
+                        <span class="project-type-tag">Cloud Architecture</span>
+                        <a href="https://github.com/ShachiMistry/scalable-order-processing-system" target="_blank"
+                            class="project-gh-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>scalable-order-processing-system</h3>
+                    <p class="project-desc">Cloud-native, event-driven order processing engine. Implements distributed
+                        idempotency keys, optimistic locking, and message queue patterns.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">AWS SQS</span>
+                        <span class="tech-tag">DynamoDB</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Stock-Market-ETL-Analytics-Platform -->
+                <div class="project-card glass-card fade-in-up" data-category="dist-etl" style="animation-delay: 0.1s;">
+                    <div class="project-header">
+                        <span class="project-type-tag">ETL &amp; Streaming</span>
+                        <a href="https://github.com/ShachiMistry/Stock-Market-ETL-Analytics-Platform" target="_blank"
+                            class="project-gh-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>Stock-Market-ETL-Analytics-Platform</h3>
+                    <p class="project-desc">End-to-end real-time ingestion pipeline processing stock market data streams
+                        using messaging clusters and validation triggers.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Apache Kafka</span>
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">Cassandra</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Netflix_popularity_Predicition -->
+                <div class="project-card glass-card fade-in-up" data-category="ml-ai" style="animation-delay: 0.15s;">
+                    <div class="project-header">
+                        <span class="project-type-tag">Data Science</span>
+                        <a href="https://github.com/ShachiMistry/Netflix_popularity_Predicition" target="_blank"
+                            class="project-gh-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>Netflix Popularity Prediction</h3>
+                    <p class="project-desc">Predictive analytics engine trained on historical Netflix catalogues,
+                        optimizing content rating predictions using feature engineering.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">XGBoost</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="section-container">
+            <div class="section-title-wrap fade-in-up">
+                <h2 class="section-title">Establish Contact</h2>
+                <p class="section-subtitle">Reach out for collaborations, system designs, or technical inquiries.</p>
+            </div>
+
+            <div class="contact-container glass-card fade-in-up">
+                <form class="contact-form"
+                    onsubmit="event.preventDefault(); alert('Message simulation triggered! Since this is a static site, please reach out directly at: shachihiteshkumar.mistry@sjsu.edu');">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5"
+                            placeholder="Let's build a new distributed ML training platform..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send System Ping</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Shachi Mistry. Designed with precision and engineered for scale.</p>
+    </footer>
+
+    <script src="script.js?v=1.6"></script>
+</body>
+
+</html>
